@@ -16,6 +16,20 @@
 
 ----
 
+## 実装について
+
+* レポジトリ https://github.com/kazu-yamamoto/dnsext
+    * 主なライブラリ
+        * dnsext-types
+        * dnsext-svcb
+        * dnsext-dnssec
+        * dnsext-do53
+        * dnsext-dox
+    * フルリゾルバ dnsext-full-resolver
+* 実装言語は Haskell
+
+----
+
 ## フルリゾルバの構成
 
 * 反復検索
