@@ -14,6 +14,15 @@ https://github.com/kazu-yamamoto/dnsext/issues/113
 
 ----
 
+## 署名検証時の TTL の復元
+
+https://github.com/kazu-yamamoto/dnsext/pull/128
+
+* RRSIG にある original TTL で復元するのが正しい
+    * jp. の権威サーバから、original TTL とは異なる TTL で返る例があった ( SOA だったと思います )
+
+----
+
 ## ゾーンの親子同居
 
 https://github.com/kazu-yamamoto/dnsext/issues/87
