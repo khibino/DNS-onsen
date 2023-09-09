@@ -33,7 +33,8 @@
 
 ## 省略された ENT のサブドメインの NXDOMAIN
 
-* `hoge.gov.example.` の NXDOMAIN を証明するには次の 3つの証拠が必要
+* `gov.example.` が省略されている状況で、 <br>
+  `hoge.gov.example.` の NXDOMAIN を証明するには次の 3つを証明する証拠が必要 (RFC5155 8.4)
     * `example.` のハッシュ化ドメイン名と一致するNSEC3レコード - (証明可能な)最近接名: example.
     * `*.example.` のハッシュ化ドメイン名をカバーするNSEC3レコード - (証明可能な)最近接名: example.
         * `H(*.example.).example.` は、必ず `example.` ゾーンのどこかに行き先があることに注意
