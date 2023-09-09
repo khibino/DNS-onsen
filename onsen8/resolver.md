@@ -42,7 +42,8 @@
 ## 反復検索
 
 * QNAME minimization の単純な実装
-   * たとえば "www.iij.ad.jp" なら ".", "jp.", "ad.jp.", "iij.ad.jp." "www.iij.ad.jp." の順に反復する
+   * たとえば "www.iij.ad.jp" なら <br>
+     ".", "jp.", "ad.jp.", "iij.ad.jp." "www.iij.ad.jp." の順に反復する
    * NameErr が返る場合でも、反復検査を継続する(その繰り返しは有限回で停止する)
        * Empty Non-Terminal で NameErr が返る場合の問題は回避される
 * NS のキャッシュから委任情報を復元
@@ -62,7 +63,7 @@
   * キーからの検索の他に、優先度の低いデータを削除できる
 * 優先度付き待ち行列を利用してキャッシュを実装
   * キー: (ドメイン名, タイプ, クラス)
-  * 優先度: キャッシュの破棄時刻 ( <現在時刻> + TTL = <破棄時刻> )
+  * 優先度: キャッシュの破棄時刻 <br> ( <現在時刻> + TTL = <破棄時刻> )
   * 値: RRset または否定応答用の情報
 
 ----
@@ -82,6 +83,13 @@
 
 * 反復検索
     * dug コマンドによるデモ
+	    * www.iij.ad.jp. A
+	    * does-not-exists.iij.ad.jp. A
+	    * www.iij.ad.jp. NS
+	    * insecure.mufj.jp. A
+	    * c.uecac.jp. A
+		* cname.small-is-beautiful.jp. A
+	    * fake2.ed448.mufj.jp. A
 * DoH/DoQ
     * bowline を起動して問い合わせてみる
 * フルリゾルバのキャッシュを見る
