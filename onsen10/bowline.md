@@ -196,3 +196,10 @@ waitVcOutput =
 
 - ランダムテスト
     - verboseCheck
+
+----
+
+## 備考
+
+- bowline リポジトリ https://github.com/kazu-yamamoto/dnsext
+- セッション検証ランダムテスト実装 https://github.com/kazu-yamamoto/dnsext/blob/f25cc85cab73d182ba0981ff3a62fbc889cf254f/dnsext-iterative/test/SessionPropSpec.hs
